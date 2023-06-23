@@ -2,13 +2,16 @@
 Erstelle ein Loginformular, in welchem Benutzername im E-Mail-Format und ein Passwort abgefragt werden können.
 Implementiere vor dem Absenden eine clientseiteige E-Mail-Formats-Validierung, welche auf eine full-qualified-domain prüft (user@host.domain).
 Implementiere eine serverseitige Uberprüfung, ob der Login erfolgreich war. Dabei sollen folgende Szenarien mindestens abgedeckt werden:
+
 - ungültige Kombination aus Benutzername und Passwort
 - Benuntzerdaten sind korrekt, der Login ist aber gesperrt
 - Login war erfolgreich
+
 Wurde für einen Benutzer das Passwort 3 mal falsch eingegeben, sollte der Login gesperrt werden.
 
 War der Login erfolgreich, sollte das erneute Aufrufen der Seite eine Begrüßungsseite darstellen und nicht mehr den Login.
 Die Begrüßungsseite soll mindestens folgende Inhalte anzeigen:
+
 - Ansprechen des angemeldeten Benutzer
 - Ausgabe der zeitlichen Differenz des letzten Login zur aktuellen Anmeldung
 - einen funktionalen Logout-Button
@@ -17,6 +20,7 @@ Die Begrüßungsseite soll mindestens folgende Inhalte anzeigen:
 Ist der User ausgeloggt, erscheint wieder die Loginseite.
 
 Jede Benutzer-Interaktion im System soll protokolliert werden. Decke dabei mindestens folgende Szenarien ab:
+
 - Login
 - Logout
 - Login-Sperre nach 3-maliger Passwort-Falscheingabe
@@ -32,8 +36,10 @@ require '../src/autoload.php';
 # Projektstruktur
 Der Document-Root für den Webserver ist der Ordner "public".
 Die Datenbank liegt im Ordner "data". Es gibt 2 Tabellen:
+
 - user
 - log
+
 Das Framework liegt im Ordner "src".
 
 Das Framework darf gern erweitert werden, eine Notwendigkeit besteht aber nicht.
@@ -49,10 +55,12 @@ $obj_database = \Test\Database::factory($str_dsn);
 ```
 Für das CSV-Database-Layer stehen rudimentäre Abfrage-Optionen bereit, welche ebenso rudimentäre Operationen unterstützen.
 Unterstützt wird:
+
 - Select 
 - Delete
 - Update
 - Insert
+  
 Zum Beispiel: 
 ``` php public/db.php
 $obj_query = $obj_database->buildSelect()->cols(['id', 'username'])->from('user');
