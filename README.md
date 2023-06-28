@@ -1,23 +1,23 @@
 # Aufgabenstellung
 Erstelle ein Loginformular, in welchem Benutzername im E-Mail-Format und ein Passwort abgefragt werden können.
 Implementiere vor dem Absenden eine clientseiteige E-Mail-Formats-Validierung, welche auf eine full-qualified-domain prüft (user@host.domain).
-Implementiere eine serverseitige Uberprüfung, ob der Login erfolgreich war. Dabei sollen folgende Szenarien mindestens abgedeckt werden:
+Implementiere eine serverseitige Überprüfung, ob der Login erfolgreich war. Dabei sollen folgende Szenarien mindestens abgedeckt werden:
 
 - ungültige Kombination aus Benutzername und Passwort
-- Benuntzerdaten sind korrekt, der Login ist aber gesperrt
+- Benutzerdaten sind korrekt, der Login ist aber gesperrt
 - Login war erfolgreich
 
-Wurde für einen Benutzer das Passwort 3 mal falsch eingegeben, sollte der Login gesperrt werden.
+Wurde für einen Benutzer das Passwort 3 Mal falsch eingegeben, sollte der Login gesperrt werden.
 
 War der Login erfolgreich, sollte das erneute Aufrufen der Seite eine Begrüßungsseite darstellen und nicht mehr den Login.
 Die Begrüßungsseite soll mindestens folgende Inhalte anzeigen:
 
-- Ansprechen des angemeldeten Benutzer
-- Ausgabe der zeitlichen Differenz des letzten Login zur aktuellen Anmeldung
+- Ansprechen des angemeldeten Benutzers
+- Ausgabe der zeitlichen Differenz des letzten Logins zur aktuellen Anmeldung
 - einen funktionalen Logout-Button
 - Protokoll der Aktionen des aktuell angemeldeten Benutzers im System
 
-Ist der User ausgeloggt, erscheint wieder die Loginseite.
+Ist der User ausgeloggt, erscheint wieder die Login-Seite.
 
 Jede Benutzer-Interaktion im System soll protokolliert werden. Decke dabei mindestens folgende Szenarien ab:
 
@@ -68,7 +68,8 @@ print_r($obj_database->fetchAssoc($obj_query));
 ```
 Der Where-Clause unterstützt derzeit ausschließlich den "equal" -Operand. Werte hingegen können schon per Alias gewrapped werden.
 
-# Coding-Regeln
+# Zu beachtende Standards und Regeln
 - PHP >=7.2 <8.0
 - PSR-0, PSR-4
-- OOP
+- OOP und MVC
+- keine verwendung externer Client-Resourcen (CSS, JS Frameworks)
