@@ -6,7 +6,7 @@ class Database {
 	const DRIVER_MSSQL = 'mssql';
 	const DRIVER_MYSQL = 'mysql';
 	const DRIVER_CSV = 'csv';
-	const DRIVER_SQLITE = 'sqplite';
+	const DRIVER_SQLITE = 'sqlite';
 	const DRIVER_ORACLE = 'oracle';
 	
 	public static function factory($str_sdn)
