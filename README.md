@@ -1,5 +1,5 @@
 # Aufgabenstellung
-Erstelle ein Loginformular, in welchem Benutzername im E-Mail-Format und ein Passwort abgefragt werden können.
+Erstelle ein Loginformular, in dem Benutzername im E-Mail-Format und ein Passwort abgefragt werden können.
 Implementiere vor dem Absenden eine clientseiteige E-Mail-Formats-Validierung, welche auf eine full-qualified-domain prüft (user@host.domain).
 Implementiere eine serverseitige Überprüfung, ob der Login erfolgreich war. Dabei sollen folgende Szenarien mindestens abgedeckt werden:
 
