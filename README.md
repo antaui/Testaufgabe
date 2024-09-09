@@ -72,4 +72,4 @@ Der Where-Clause unterstützt derzeit ausschließlich den "equal" -Operand. Wert
 - PHP >=7.2 <8.0
 - PSR-0, PSR-4
 - OOP und MVC
-- keine verwendung externer Client-Resourcen (CSS, JS Frameworks)
+- keine verwendung externer Client-Resourcen oder externer Frameworks
