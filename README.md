@@ -73,3 +73,5 @@ Der Where-Clause unterstützt derzeit ausschließlich den "equal" -Operand. Wert
 - PSR-0, PSR-4
 - OOP und MVC
 - keine verwendung externer Client-Resourcen oder externer Frameworks
+- keine Implementierung serverseitiger Frameworks (python, php ... )
+- der Einsatz von KI ist nicht gewünscht
